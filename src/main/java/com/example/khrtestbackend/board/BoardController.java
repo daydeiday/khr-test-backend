@@ -29,12 +29,12 @@ public class BoardController {
         return ResponseEntity.ok(boardResList);
     }
 
-    @GetMapping("/search")
-    public ResponseEntity<BoardDto.Response> search(String name) {
-        BoardDto.Response response = boardService.searchByName(name);
-
-        return ResponseEntity.ok(response);
-    }
+//    @GetMapping("/search")
+//    public ResponseEntity<BoardDto.Response> search(String name) {
+//        BoardDto.Response response = boardService.searchByName(name);
+//
+//        return ResponseEntity.ok(response);
+//    }
 
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody BoardDto.Register dto ) {

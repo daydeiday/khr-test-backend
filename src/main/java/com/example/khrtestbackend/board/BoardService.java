@@ -38,9 +38,9 @@ public class BoardService {
         return null;
     }
 
-    public BoardDto.Response searchByName(String name) {
-        Board board = boardRepository.findByName(name).orElseThrow();
-
-        return BoardDto.Response.from(board);
-    }
+//    public BoardDto.Response searchByName(String name) {
+//        Board board = boardRepository.findByName(name).orElseThrow();
+//
+//        return BoardDto.Response.from(board);
+//    }
 }
